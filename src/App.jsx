@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import EstilosGlobais from "./componentes/EstilosGlobais";
 import Cabecalho from "./componentes/Cabecalho";
-import InputPesquisa from "./componentes/CampoTexto";
+import BarraLateral from "./componentes/BarraLateral";
 
 const FundoGrandiente = styled.div`
   background: linear-gradient(
@@ -19,7 +19,8 @@ function App() {
     <FundoGrandiente>
       <EstilosGlobais />
       <Cabecalho />
-      <InputPesquisa />
+      <BarraLateral />
+      
     </FundoGrandiente>
   );
 }
