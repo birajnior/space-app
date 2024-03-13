@@ -4,7 +4,7 @@ const ButtonStyle = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.625rem 0.5rem;
   font-size: 1.5rem;
   color: #ffffff;
   border: 3px solid transparent;

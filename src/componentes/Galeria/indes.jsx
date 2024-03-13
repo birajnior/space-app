@@ -10,16 +10,17 @@ const GaleriaContainer = styled.div`
 
 const SectionFluida = styled.section`
   flex-grow: 1;
+  margin-right: 24px;
 `;
 
 const ImagensContainer = styled.section`
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
-`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+`;
 
-const Galeria = ({ fotos = [] }) => {
+const Galeria = ({ fotos = [], aoFotoFelecionada }) => {
   return (
     <>
       <Tags />
@@ -29,10 +30,10 @@ const Galeria = ({ fotos = [] }) => {
           <Titulo>Navegue pela galeria</Titulo>
           <ImagensContainer>
             {fotos.map((foto) => (
-              // <li>{foto.titulo}</li>
-              <Imagem 
-              key={foto.id}
-              foto={foto}
+              <Imagem
+                aoZoomSolicitado={aoFotoFelecionada}
+                key={foto.id}
+                foto={foto}
               />
             ))}
           </ImagensContainer>
